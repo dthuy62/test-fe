@@ -1,0 +1,28 @@
+.comment-header {
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.75;
+    color: #222222;
+    margin-bottom: 19px;
+  }
+
+  .write-comment-box {
+    position: relative;
+
+    .add-comment {
+      width: 100%;
+      padding: 14px 15px;
+    }
+
+    .btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+.comment-list {
+  margin-top: 41px;
+}

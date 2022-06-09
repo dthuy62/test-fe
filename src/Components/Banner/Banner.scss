@@ -1,0 +1,240 @@
+.banner {
+  margin-top: 53px;
+  background-color: #efefef;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    &-title {
+      float: left;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      .subTitle {
+        font-size: 18px;
+        line-height: 2.61;
+      }
+
+      .desc {
+        font-size: 35px;
+
+        line-height: 1.16;
+
+      }
+
+      .btn.watch.now {
+        width: 100%;
+        max-width: 60%;
+      }
+
+
+    }
+
+    &-video {
+      position: relative;
+      height: 100%;
+
+      .btn-play {
+        width: 10%;
+        height: 10%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+      }
+
+      .live-label {
+        position: absolute;
+        left: -10px;
+        top: 10px;
+      }
+
+      .time {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        color: white;
+        padding: 7px 11px;
+        border: 1px solid #070707;
+        background-color: rgba(0, 0, 0, 0.65);
+      }
+    }
+
+    &-mini-slider {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .mini-slider {
+        &__movie {
+          display: flex;
+          gap: 0 20px;
+
+          .thumbnail {
+          }
+
+          .desc {
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+            h3 {
+              font-size: 18px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1;
+              letter-spacing: normal;
+            }
+            p {
+              font-size: 12px;
+              font-weight: 300;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.25;
+              letter-spacing: normal;
+            }
+
+            .amount-feeling {
+              margin: 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .banner {
+    &__inner {
+      flex-direction: column;
+      gap: 20px 0;
+      &-title {
+        width: 100%;
+        gap: 20px 0;
+        .subTitle {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 28px;
+        }
+      }
+      &-video {
+        img:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    &__inner {
+      flex-direction: column;
+      gap: 20px 0;
+      &-title {
+        width: 70%;
+        gap: 20px 0;
+        .subTitle {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 28px;
+        }
+      }
+      &-video {
+        img:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    &__inner {
+      flex-direction: column;
+      gap: 20px 0;
+      &-title {
+        width: 70%;
+        gap: 20px 0;
+        .subTitle {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 28px;
+        }
+      }
+      &-video {
+        img:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .banner {
+    &__inner {
+      flex-direction: column;
+      gap: 20px 0;
+      &-title {
+        width: 70%;
+        gap: 20px 0;
+        .subTitle {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 28px;
+        }
+      }
+      &-video {
+        img:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .banner {
+    &__inner {
+
+      gap: 0 20px;
+      &-title {
+        width: 30%;
+        .subTitle {
+          font-size: 14px;
+        }
+        .desc {
+          font-size: 23px;
+        }
+        .btn {
+          padding: 12px 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &-video {
+
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.amount-feeling {
+  display: flex;
+  gap: 0 19px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+
+  &__like, &__view, &__follower {
+    display: flex;
+    align-items: center;
+    gap: 0 7px;
+  }
+}

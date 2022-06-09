@@ -1,0 +1,53 @@
+.comment-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px 0;
+  margin-bottom: 39px;
+  flex-direction: column;
+  cursor: pointer;
+
+  &-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .actions {
+      display: none;
+    }
+  }
+
+  &__owner {
+    display: flex;
+    gap: 0 15px;
+    &-info {
+      p:first-child {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2.5;
+        color: #222222;
+      }
+      p:last-child {
+        font-size: 12px;
+        font-weight: 300;
+        color: #888888;
+      }
+
+    }
+  }
+  &__content {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #222222;
+  }
+
+  &:hover {
+    .actions {
+      display: flex;
+      gap: 0 10px;
+      align-items: center;
+    }
+
+  }
+}
